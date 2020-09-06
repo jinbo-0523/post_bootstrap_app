@@ -1,4 +1,4 @@
-<% flash.eavh do |flash_type, msg| %>
-  <p style="color:<%= flash_typ == 'notice' ? 'green' : 'red' %>;"><%= msg%></p>
+<% flash.each do |flash_type, msg| %>
+  <p style="color:<%= flash_type == 'notice' ? 'green' : 'red' %>;"><%= msg%></p>
   <hr>
 <% end %>
