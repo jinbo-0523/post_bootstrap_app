@@ -10,10 +10,14 @@
   </head>
 
   <body>
-    <div class="max-vw-600 max-vh-600">
+    <header>
       <%= render "layouts/header" %>
+    </header>
+    <main>
       <%= render "layouts/flash" %>
-      <%= yield %>
-    </div>
+      <div class="base-container">
+        <%= yield %>
+      </div>
+    </main>
   </body>
 </html>
